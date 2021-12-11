@@ -33,7 +33,7 @@ namespace API_WebApp.Services.Schedule
                                 Day = "Monday", Room = "M101", Teacher = "Eugenio"},
                             new SubjectDTO() { Id = 1, Name = "PWIC_3A" , StartTime = "13", EndTime = "15",
                                 Day = "Monday", Room = "M101", Teacher = "Naira"},
-                            new SubjectDTO() { Id = 6, Name = "PRESS_2A" , StartTime = "17", EndTime = "19",
+                            new SubjectDTO() { Id = 6, Name = "PRES_2A" , StartTime = "17", EndTime = "19",
                                 Day = "Monday", Room = "M205", Teacher = "Mar"},
                             new SubjectDTO() { Id = 2, Name = "PRO_3A" , StartTime = "11", EndTime = "13",
                                 Day = "Tuesday", Room = "M101", Teacher = "Teresa"},
@@ -43,7 +43,7 @@ namespace API_WebApp.Services.Schedule
                                 Day = "Wednesday", Room = "M101", Teacher = "Pedro"},
                             new SubjectDTO() { Id = 4, Name = "ISIN_3A" , StartTime = "13", EndTime = "15",
                                 Day = "Wednesday", Room = "M101", Teacher = "Eduardo"},
-                            new SubjectDTO() { Id = 6, Name = "PRESS_2A" , StartTime = "17", EndTime = "19",
+                            new SubjectDTO() { Id = 6, Name = "PRES_2A" , StartTime = "17", EndTime = "19",
                                 Day = "Wednesday", Room = "M205", Teacher = "Mar"},
                             new SubjectDTO() { Id = 4, Name = "ISIN_3A" , StartTime = "11", EndTime = "13",
                                 Day = "Thursday", Room = "M101", Teacher = "Eduardo"},
@@ -54,7 +54,13 @@ namespace API_WebApp.Services.Schedule
                             new SubjectDTO() { Id = 5, Name = "PSDI_3A" , StartTime = "11", EndTime = "13",
                                 Day = "Friday", Room = "M101", Teacher = "Marcos"}
 
+                        },
+                        ScheduleSchema = new ScheduleSchemaDTO()
+                        {
+                            Days = new List<string>(){"Monday","Tuesday", "Wednesday", "Thursday" },
+                            Hours = new List<string>(){"09", "11", "13", "15", "17", "19"}
                         }
+
                     }
                 },
                 { 
@@ -83,6 +89,11 @@ namespace API_WebApp.Services.Schedule
                             new SubjectDTO() { Id = 5, Name = "PSDI_3A" , StartTime = "11", EndTime = "13",
                                 Day = "Friday", Room = "M101", Teacher = "Marcos"}
 
+                        },
+                        ScheduleSchema = new ScheduleSchemaDTO()
+                        {
+                            Days = new List<string>(){"Monday","Tuesday", "Wednesday", "Thursday", "Friday" },
+                            Hours = new List<string>(){"09", "11", "13", "15", "17", "19"}
                         }
                     } 
                 
